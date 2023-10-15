@@ -1,0 +1,104 @@
+html body header h1 h2 div p {
+    margin: 0;
+    border: 0;
+    padding-left: 0;
+}
+body {
+    background-color: rgb(146, 133, 133);
+}
+
+h1 {
+    background-color: yellowgreen;
+    width: max-content;
+}
+
+h2 {
+    background-color: rgb(219, 178, 128);
+    grid-column: span 3;
+}
+
+#comments-container {
+    border: 1px solid #ccc; /* Add a border around the comments container */
+    padding: 10px; 
+    margin: 10px 0; 
+    background-color: #f7f7f7; 
+   
+}
+
+#comment-form {
+    background-color: rgb(142, 135, 140);
+    border: 2px solid #ccc; 
+    margin: 10px 0;
+    border: 20px;
+    padding: 10px; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-rows: minmax(100px auto);
+    gap: 10px;  
+}
+
+#comment-for>div{
+    padding: 10px;
+}
+
+.user-avatar {
+    background-image: url("avatarIcon: .;");
+    max-width: 100%;
+    height: auto;
+
+    grid-column-start: 1;
+    grid-row: 2/3;
+    border-radius: 50%;
+}
+
+.user-info {
+    background-color: aqua;
+    font-weight: bold;
+    grid-column: 1 / span 2; /* Span two columns */
+    grid-row: 1; /* Place in the first row */
+}  
+
+.comment {
+    background-color: blue;
+    
+}
+
+textarea {
+    grid-column: 2 / span 2; /* Span two columns starting from the second column */
+    grid-row: 2; /* Place in the second row */
+}
+
+#submit-comment {
+    grid-column: 1 / span 3; /* Span all three columns */
+    grid-row: 3; /* Place in the third row */
+  }
+  
+  #comment-list {
+    grid-column: 1 / span 3; /* Span all three columns */
+    grid-row: 4; /* Place in the fourth row */
+  }
+  This CSS code applies a CSS Grid to the #comment-form, defining 3 columns and 4 rows. It also sets specific placements and spans for each of the grid items based on their positions in the form. You can further adjust the styling and spacing as needed to match your design preferences.
+  
+  
+  
+  
+  
+  
+  Regener
+.submit-comment{
+    background-color: chocolate;
+    
+}
+
+.edit-button {
+    background-color: azure;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.delete-button{
+    background-color: brown;
+    grid-column: 3;
+    grid-row-end: 4;
+}
